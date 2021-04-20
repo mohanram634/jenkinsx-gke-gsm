@@ -6,11 +6,17 @@ environments:
 repositories:
 - name: jx3
   url: https://storage.googleapis.com/jenkinsxio/charts
+- name: dev
+  url: http://chartmuseum-jx.35.184.128.47.nip.io/
 releases:
 - chart: jx3/jx-verify
   name: jx-verify
   namespace: jx-production
   values:
   - jx-values.yaml
+- chart: dev/php
+  version: 0.0.1
+  name: php
+  namespace: jx-production
 templates: {}
 renderedvalues: {}
