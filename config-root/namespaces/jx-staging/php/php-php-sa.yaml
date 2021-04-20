@@ -1,0 +1,8 @@
+# Source: php/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: php-php
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'

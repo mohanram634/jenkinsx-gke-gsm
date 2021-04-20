@@ -41,6 +41,12 @@
 	      <td><a href='https://github.com/jenkins-x/jx-verify'>source</a></td>
 	    </tr>
     <tr>
+	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> php </a></td>
+	      <td>0.0.1</td>
+	      <td><a href='http://php-jx-staging.35.184.128.47.nip.io'>view</a></td>
+	      <td></td>
+	    </tr>
+    <tr>
 		      <td colspan='4'><h3>jx</h3></td>
 		    </tr>
 	    <tr>
