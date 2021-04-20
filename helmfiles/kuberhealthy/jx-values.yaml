@@ -20,16 +20,24 @@ jxRequirements:
     enabled: false
     schedule: ""
   cluster:
+    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    clusterName: tf-jx-tolerant-boxer
     devEnvApprovers:
     - todo
     environmentGitOwner: todo
     gitKind: github
     gitName: github
     gitServer: https://github.com
+    gke:
+      projectNumber: "867116772374"
+    project: jenkinsx-2021
     provider: gke
     registry: gcr.io
+    zone: us-central1-a
   environments:
   - key: dev
+    owner: mohanram634
+    repository: jenkinsx-gke-gsm
   - key: staging
   - key: production
   ingress:
@@ -40,9 +48,19 @@ jxRequirements:
     tls:
       email: ""
       enabled: false
-      production: false
+      production: true
+  kuberhealthy: true
+  pipelineUser:
+    username: mohanramc634
   repository: nexus
   secretStorage: gsm
+  storage:
+  - name: logs
+    url: gs://logs-tf-jx-tolerant-boxer-8cdd3725d81d
+  - name: reports
+    url: gs://reports-tf-jx-tolerant-boxer-8cdd3725d81d
+  - name: repository
+    url: gs://repository-tf-jx-tolerant-boxer-8cdd3725d81d
   vault: {}
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:
@@ -50,7 +68,7 @@ jxRequirementsIngressExternalDNS:
 jxRequirementsIngressTLS:
   enabled: false
 jxRequirementsKuberhealthy:
-  enabled: false
+  enabled: true
 jxRequirementsTLSCheck:
   enabled: false
 jxRequirementsVault:
