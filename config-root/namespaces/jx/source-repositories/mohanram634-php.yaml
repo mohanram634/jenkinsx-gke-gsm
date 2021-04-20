@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: mohanram634
+    provider: github
+    repository: php
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: mohanram634-php
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/mohanram634/php.git
+  org: mohanram634
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: php
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/mohanram634/php
