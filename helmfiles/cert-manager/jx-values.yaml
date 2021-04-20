@@ -41,7 +41,7 @@ jxRequirements:
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: 35.184.128.47.nip.io
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -cert-manager.

@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - mohanram634/jenkinsx-gke-gsm
-      target_url: http://dashboard-jx.
+      target_url: http://dashboard-jx.35.184.128.47.nip.io
 kind: ConfigMap
 metadata:
   creationTimestamp: null
