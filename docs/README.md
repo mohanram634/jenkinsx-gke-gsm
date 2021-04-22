@@ -48,7 +48,7 @@
 	    </tr>
     <tr>
 	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> node-hello </a></td>
-	      <td>0.0.1</td>
+	      <td>0.0.2</td>
 	      <td><a href='http://node-hello-jx-staging.35.184.128.47.nip.io'>view</a></td>
 	      <td></td>
 	    </tr>

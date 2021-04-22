@@ -72,7 +72,7 @@
     repositoryName: dev
     repositoryUrl: http://chartmuseum-jx.35.184.128.47.nip.io/
     resourcePath: config-root/namespaces/jx-staging/node-hello
-    version: 0.0.1
+    version: 0.0.2
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
