@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         mohanram634/jenkinsx-gke-gsm: true
+        mohanram634/node-hello: true
         mohanram634/php: true
         mohanram634/ram: true
         mohanram634/simple-java-maven-app: true
@@ -24,6 +25,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         mohanram634/jenkinsx-gke-gsm: merge
+        mohanram634/node-hello: merge
         mohanram634/php: merge
         mohanram634/ram: merge
         mohanram634/simple-java-maven-app: merge
@@ -39,6 +41,7 @@ data:
         - needs-rebase
         repos:
         - mohanram634/jenkinsx-gke-gsm
+        - mohanram634/node-hello
         - mohanram634/php
         - mohanram634/ram
         - mohanram634/simple-java-maven-app
@@ -53,6 +56,7 @@ data:
         - needs-rebase
         repos:
         - mohanram634/jenkinsx-gke-gsm
+        - mohanram634/node-hello
         - mohanram634/php
         - mohanram634/ram
         - mohanram634/simple-java-maven-app

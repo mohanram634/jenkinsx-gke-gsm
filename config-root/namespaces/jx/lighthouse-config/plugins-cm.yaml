@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - mohanram634/node-hello
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - mohanram634/php
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -35,6 +39,9 @@ data:
       mohanram634/jenkinsx-gke-gsm:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
+      mohanram634/node-hello:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
       mohanram634/php:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -54,6 +61,22 @@ data:
     plugins:
       mohanram634/jenkinsx-gke-gsm:
       - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      mohanram634/node-hello:
       - approve
       - assign
       - blunderbuss
@@ -144,6 +167,9 @@ data:
     triggers:
     - repos:
       - mohanram634/jenkinsx-gke-gsm
+      trusted_org: todo
+    - repos:
+      - mohanram634/node-hello
       trusted_org: todo
     - repos:
       - mohanram634/php
