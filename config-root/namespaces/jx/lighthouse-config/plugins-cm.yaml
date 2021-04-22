@@ -26,6 +26,10 @@ data:
       repos:
       - mohanram634/spring-boot
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - mohanram634/testing
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -52,6 +56,9 @@ data:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       mohanram634/spring-boot:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      mohanram634/testing:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
     heart: {}
@@ -156,6 +163,22 @@ data:
       - cat
       - dog
       - pony
+      mohanram634/testing:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -182,6 +205,9 @@ data:
       trusted_org: todo
     - repos:
       - mohanram634/spring-boot
+      trusted_org: todo
+    - repos:
+      - mohanram634/testing
       trusted_org: todo
     welcome:
     - message_template: Welcome

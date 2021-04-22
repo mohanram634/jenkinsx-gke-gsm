@@ -13,6 +13,7 @@ data:
         mohanram634/ram: true
         mohanram634/simple-java-maven-app: true
         mohanram634/spring-boot: true
+        mohanram634/testing: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -30,6 +31,7 @@ data:
         mohanram634/ram: merge
         mohanram634/simple-java-maven-app: merge
         mohanram634/spring-boot: merge
+        mohanram634/testing: merge
       queries:
       - labels:
         - approved
@@ -46,6 +48,7 @@ data:
         - mohanram634/ram
         - mohanram634/simple-java-maven-app
         - mohanram634/spring-boot
+        - mohanram634/testing
       - labels:
         - updatebot
         missingLabels:
@@ -61,6 +64,7 @@ data:
         - mohanram634/ram
         - mohanram634/simple-java-maven-app
         - mohanram634/spring-boot
+        - mohanram634/testing
       target_url: http://dashboard-jx.35.184.128.47.nip.io
 kind: ConfigMap
 metadata:
