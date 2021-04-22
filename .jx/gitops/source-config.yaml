@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: asp
     - name: node-hello
     - name: php
     - name: ram
