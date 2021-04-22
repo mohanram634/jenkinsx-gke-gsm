@@ -9,6 +9,7 @@ data:
       enabled:
         mohanram634/jenkinsx-gke-gsm: true
         mohanram634/php: true
+        mohanram634/ram: true
         mohanram634/simple-java-maven-app: true
         mohanram634/spring-boot: true
     plank: {}
@@ -24,6 +25,7 @@ data:
       merge_method:
         mohanram634/jenkinsx-gke-gsm: merge
         mohanram634/php: merge
+        mohanram634/ram: merge
         mohanram634/simple-java-maven-app: merge
         mohanram634/spring-boot: merge
       queries:
@@ -38,6 +40,7 @@ data:
         repos:
         - mohanram634/jenkinsx-gke-gsm
         - mohanram634/php
+        - mohanram634/ram
         - mohanram634/simple-java-maven-app
         - mohanram634/spring-boot
       - labels:
@@ -51,6 +54,7 @@ data:
         repos:
         - mohanram634/jenkinsx-gke-gsm
         - mohanram634/php
+        - mohanram634/ram
         - mohanram634/simple-java-maven-app
         - mohanram634/spring-boot
       target_url: http://dashboard-jx.35.184.128.47.nip.io
