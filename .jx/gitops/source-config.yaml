@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: php
+    - name: spring-boot
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
