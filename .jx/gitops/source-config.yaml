@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: php
+    - name: ram
     - name: simple-java-maven-app
     - name: spring-boot
     scheduler: in-repo

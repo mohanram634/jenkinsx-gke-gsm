@@ -12,6 +12,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - mohanram634/ram
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - mohanram634/simple-java-maven-app
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -32,6 +36,9 @@ data:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       mohanram634/php:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      mohanram634/ram:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       mohanram634/simple-java-maven-app:
@@ -63,6 +70,22 @@ data:
       - dog
       - pony
       mohanram634/php:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      mohanram634/ram:
       - approve
       - assign
       - blunderbuss
@@ -124,6 +147,9 @@ data:
       trusted_org: todo
     - repos:
       - mohanram634/php
+      trusted_org: todo
+    - repos:
+      - mohanram634/ram
       trusted_org: todo
     - repos:
       - mohanram634/simple-java-maven-app
