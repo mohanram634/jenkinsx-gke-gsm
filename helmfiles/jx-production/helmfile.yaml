@@ -18,5 +18,7 @@ releases:
   version: 0.0.1
   name: node-hello
   namespace: jx-production
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
