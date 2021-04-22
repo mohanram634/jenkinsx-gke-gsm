@@ -13,6 +13,7 @@ spec:
     - name: ram
     - name: simple-java-maven-app
     - name: spring-boot
+    - name: testing
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
