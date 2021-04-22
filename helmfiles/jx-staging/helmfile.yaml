@@ -20,5 +20,11 @@ releases:
   namespace: jx-staging
   values:
   - jx-values.yaml
+- chart: dev/node-hello
+  version: 0.0.1
+  name: node-hello
+  namespace: jx-staging
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
