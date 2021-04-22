@@ -9,6 +9,7 @@ data:
       enabled:
         mohanram634/jenkinsx-gke-gsm: true
         mohanram634/php: true
+        mohanram634/simple-java-maven-app: true
         mohanram634/spring-boot: true
     plank: {}
     pod_namespace: jx
@@ -23,6 +24,7 @@ data:
       merge_method:
         mohanram634/jenkinsx-gke-gsm: merge
         mohanram634/php: merge
+        mohanram634/simple-java-maven-app: merge
         mohanram634/spring-boot: merge
       queries:
       - labels:
@@ -36,6 +38,7 @@ data:
         repos:
         - mohanram634/jenkinsx-gke-gsm
         - mohanram634/php
+        - mohanram634/simple-java-maven-app
         - mohanram634/spring-boot
       - labels:
         - updatebot
@@ -48,6 +51,7 @@ data:
         repos:
         - mohanram634/jenkinsx-gke-gsm
         - mohanram634/php
+        - mohanram634/simple-java-maven-app
         - mohanram634/spring-boot
       target_url: http://dashboard-jx.35.184.128.47.nip.io
 kind: ConfigMap
