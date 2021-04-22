@@ -1,0 +1,59 @@
+# Source: node-hello/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-hello-node-hello
+  labels:
+    draft: draft-app
+    chart: "node-hello-0.0.2"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx-production
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
+spec:
+  selector:
+    matchLabels:
+      app: node-hello-node-hello
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        draft: draft-app
+        app: node-hello-node-hello
+    spec:
+      serviceAccountName: node-hello-node-hello
+      containers:
+        - name: node-hello
+          image: "gcr.io/jenkinsx-2021/node-hello:0.0.2"
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: VERSION
+              value: 0.0.2
+          envFrom: null
+          ports:
+            - name: http
+              containerPort: 8080
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 60
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          resources:
+            limits:
+              cpu: 400m
+              memory: 256Mi
+            requests:
+              cpu: 200m
+              memory: 128Mi
+      terminationGracePeriodSeconds:
+      imagePullSecrets:

@@ -1,0 +1,8 @@
+# Source: node-hello/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: node-hello-node-hello
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
